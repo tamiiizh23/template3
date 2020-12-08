@@ -1,0 +1,401 @@
+
+*{
+    text-decoration: none;
+ 
+  
+}
+body{
+    background-color: #f3f3f3;
+}
+
+header{
+   
+    background-color: rgba(100, 100, 100, 0.5);
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+
+}
+
+header .header-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px 0;
+}
+
+header nav ul li {
+   display: inline-block;
+   list-style: none;
+   float: left;
+   padding: 0 16px;
+}
+
+header nav ul a{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 16px;
+   color: #111;
+}
+@media (min-width: 967px) { 
+   header .header-brand{
+    
+      color: #111;
+      text-align: left;
+      float: left;
+      margin: 21px 0;
+      padding: 0px 20px 0 40px;
+      line-height: 38px;
+     
+  }
+  
+  header nav ul {
+     
+      margin: 10px 0;
+      float: right;
+    } 
+   
+   
+}
+      /* BANNER */
+
+.index-banner{
+    width: 100%; 
+    height: 400px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYw19jkIthxUulWIsWk6oS0Ui9vxbLNzt9w&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.vertical-center{
+     display: table-cell;
+     vertical-align: middle;
+    
+}
+/* IMAGE */
+.index-banner h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    line-height: 70px;
+}
+.index-banner p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+    font-style: italic;
+    line-height: 40px;
+}
+
+
+.index-banner button{
+      width: 120px; 
+      height: 30px;
+      font-size: 15px;
+     margin: 0 auto; 
+      display: block;
+     background: yellow;
+     color: #000000;
+     cursor: pointer; 
+
+
+}
+/* ABOUTS US */
+.index-middle{
+    width: 100%;
+   
+    background: #f3f3f3;
+}
+.index-middle h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.index-middle p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    line-height: 30px;
+}
+ /* FORMS */
+.index-heading p{
+    text-align: center;
+}
+.index-forms{
+    background-color: rgb(248, 182, 0);
+    padding:20px 5px 0 5px ;
+    margin-top: 15px;
+}
+.index-input input{
+    width: 100%;
+    
+}
+
+/* OURTEAM */
+.grid{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* background-color: gray; */
+    height: 830px;
+    color: #fff;
+}
+
+.grid-container {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* overflow: hidden; */
+    
+    
+    
+     margin: 10px auto;
+   
+   
+   
+}
+.grid-container img{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+
+  .round-one{
+    background-image: url('https://images.unsplash.com/photo-1555381983-49b080e6ac89?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ');
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: 4px solid rgb(248, 182, 0);;
+    border-radius: 50%;
+  }
+  .rounds h2{
+      text-align: center;
+  }
+.rounds p{
+      font-size: 6px;
+      text-align: center;
+}
+.rounds a{
+    border: 1px solid black;
+}
+.rounds button{
+    width: 50px;
+    background-color: yellow;
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+  @media (min-width: 767px) { 
+    .grid-container{
+      max-width: 50%;
+      margin-bottom: 100px;
+      margin: 10 auto;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr ;
+        height: 450px;
+      
+   }
+   .rounds p{
+    font-size: 7px;
+    
+}
+  }
+  @media (min-width: 1024px) { 
+    .wrapper{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .grid-container {
+      width: 50%;
+      margin: 10 auto;
+      }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 300px;
+    }
+    .rounds p{
+        font-size: 10px;
+        
+  }
+  .rounds button{
+      height: 25px;
+      font-size: 8px;
+  }
+  
+    
+  }
+
+  /* PORTFOLLO */
+
+ 
+
+
+.index-images{
+  margin: 0 auto;
+  
+}  
+    .image-grid {
+      
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .grid-image {
+      display: block;
+      flex-basis: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+   
+
+    @media only screen and (min-width: 450px) {
+      .grid-image {
+       
+        width: calc(100% / 2);
+        flex-basis: auto;
+      }
+    }
+     
+    
+    @media only screen and (min-width: 640px) {
+      .grid-image {
+        width: calc(100% / 3);
+        flex-basis: auto;
+      
+      }
+    }
+     
+   
+    @media only screen and (min-width: 1024px) {
+      .grid-image {
+        flex-basis: 25%;
+        max-width: 100%;
+      }
+      .wrapper{
+        width: 1000px;
+        margin: 0 auto;
+      }
+    }
+      @media only screen and (min-width: 1200px) {
+        .grid-image {
+          flex-basis: 33.333%;
+          max-width: 100%;
+        }
+        .wrapper{
+          width: 1000px;
+          margin: 0 auto;
+        }
+    }
+     
+   
+   /* FOOTER */
+    
+   .footer-banner{
+            width: 100%; 
+            height: 700px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtXUEMMtzJ1Os-Ao6hoNPUho4Opj9CXbhmg&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+   }
+
+  .footer-banner p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  .footer-banner h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+   }
+
+   .footer-banner form{
+    padding: 10px; 
+    width: 100%;
+
+   }
+   .footer-banner input ,textarea{
+     
+    width: 100%;
+
+   }
+  footer nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 20px 0;
+  }
+  
+ footer nav ul li {
+     display: inline-block;
+     list-style: none;
+     float: left;
+     padding: 0 16px;
+  }
+  
+ footer nav ul a{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 16px;
+     color: #fff;
+  }
+
+  footer #copy{
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+  }
+
+  @media (min-width: 640px) { 
+    .wrapper{
+      width: 640px;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media (min-width: 1024px) { 
+    .wrapper{
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+  }
